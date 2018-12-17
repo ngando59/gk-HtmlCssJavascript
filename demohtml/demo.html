@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Demo</title>
+	<meta charset="utf-8" />
+	<style>
+		body {
+			background-color: #edf9f9; 
+			margin: 0
+		}
+		.wrapper {
+			width: 1000px; 
+			margin: 0 auto; 
+			border: 1px solid #eee; 
+			padding: 15px; 
+			background-color: white
+		}
+		.gras {
+			font-weight: bold;
+		}
+		em.gras {
+			color: #999;
+		}
+		.grasSouligne {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.text-center {
+			text-align: center;
+		}
+		.text-justify {
+			text-align: justify;
+		}
+		.left {
+			float: left;
+			margin-right: 15px;
+		}
+		.flex {
+			display: flex;
+			align-items: center;
+			justify-content: center;		
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Bonjour !</h1>	
+		<div class="text-center">
+			<a href="http://www.google.fr" target="_blank"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google" /></a><br/>
+			<a href="http://www.google.fr" target="_blank"><em>lien vers google</em></a>
+			<br/><br/>
+			<img src="https://veraicona.hypotheses.org/files/2015/09/pokemon.gif" alt="">
+			<br/>
+			<em class="gras">pika pika pika</em>
+		</div>
+		<hr/>
+		<div>	
+			<p class="text-justify">
+				<span>(a-b)</span><sup>2</sup><span>= a</span><sup>2</sup><span>-2ab+b</span><sup>2</sup><br/><br/>
+				<sub>sub</sub><span>Texte...</span><br /><br/>
+				<samp>exemple samp</samp><br /><br/>
+				<small>du texte en small !</small><br/><br/>
+				<xmp>Texte avec une fonte non proportionelle</xmp><br><br/>
+				<kbd>Texte saisi au clavier :)</kbd><br/><br/>
+				<dfn>Texte de définition :(</dfn><br/><br/>
+				<cite>Citation !</cite><br/><br/>
+				<big>Texte en big !</big><br/><br/>
+				<address> 
+					15 rue des rues <br/>
+					00000, nulpart.
+				</address><br/>
+				<code>
+					public static void main(String[] args) { <br/>
+					&nbsp;&nbsp;&nbsp;System.out.println("Hello world !");<br/>
+					} <br/>
+				</code>
+			</p>
+			<hr/>
+			<div class="flex">
+				<ol class="left">
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ol>
+				<ol type="a" class="left">
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ol>
+				<ol type="i" class="left">
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ol>
+			</div>
+			<hr/>	
+			<div class="flex">
+				<ul>
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ul>
+				<ul type="square">
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ul>
+				<ul type="circle">
+					<li>Contacter le medecin</li>
+					<li>Faire les courses</li>
+					<li>Laver Jeremie</li>
+					<li>Chanter</li>
+				</ul>
+			</div>		
+			<hr/>
+			<div>
+				<dl>
+					<dt>Dentiste</dt>
+						<dd>Rue Albert, 59000</dd>
+						<dd>Rue kelkepart, 00000</dd>
+					<dt>2</dt>
+					<dt>3</dt>
+						<dd>bain rien</dd>
+				</dl>
+			</div>
+			<hr/>
+			<p class="text-justify">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			<p class="text-justify">
+				"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br/><br/>>
+
+				Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.<br/><br/> 
+
+				Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+			</p>
+		</div>
+	</div>
+</body>
+</html>
