@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test html</title>
+	<meta charset="utf-8">
+	<style>
+		p{
+			width: 200px;
+			height: 200px;
+			background-color: lightgrey;
+		}
+		div.divVert {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #51ff6e;
+			padding-top: 1em;
+		}
+		p.pViolet {
+			width: 200px;
+			height: 50px;
+			background-color: #dd89ff;
+			margin: 0 auto;
+			margin-top: 15px;
+			padding: 3px;
+		}
+		p.pGk {
+			width: 500px;
+			height: 60px;
+			position: relative;
+			margin: 0 auto;
+			text-align: justify;
+			padding: 7px;
+			background-color: transparent;
+			overflow: scroll;
+		}
+		p.pGk img {
+			width: 100px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			clip: rect(0px, 67px, 75px, 0px);
+			margin-right: 5px;
+			z-index: -1;
+		}
+		div.menu {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: "Courier new";
+		}
+		.menu1, .menu2 {
+			background-color: #ffd8fa;
+			width: 100px;
+			color: #777; 
+			margin: 15px;
+		}
+		.menu2 {
+			list-style: none;
+		}
+		.menu1 li, .menu2 li {
+			margin: 7px;
+		}
+		.menu1 a, .menu2 a, .menu3 a {
+			color: #777;
+			text-decoration: none;
+		}
+		.menu1 a:hover, .menu2 a:hover, .menu3 a:hover { 
+			text-decoration: underline;
+		}
+		.menu3 {
+			background-color: #ffd8fa;
+			color: #777; 
+			margin: 0;
+			padding: 0
+		}
+		.menu3 {
+			list-style: none;
+		}
+		.menu3 li { 
+			float: left;
+			margin: 5px 15px;
+			padding: 7px
+		}
+		.menu3 li a {
+			background-color: #0062ad;
+			color: #ffffff;
+			padding: 5px
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Taille : si on écrit de nombreux caractères on sortira du cadre limité par notre déclaration de hauteur et largeur fixées à 200 !! ../..
+	</p>
+	<div class="divVert">
+		<p class="pViolet">
+			1 <sup>er</sup> Paragraphe de texte ici !
+		</p>
+		<p class="pViolet">
+			2 <sup>ième</sup> Paragraphe de texte ici !
+		</p>
+	</div>
+	<p class="pGk">
+		<img src="https://melalille.files.wordpress.com/2017/11/michel-leeb.jpg?w=235&h=235" alt="">
+		Victus universis caro ferina est lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus frumenti usum et vini penitus ignorantes.
+	</p>
+	<div class="menu">
+		<ul class="menu1">
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+			<li><a href="#">Menu 4</a></li>
+		</ul>
+		<ul class="menu2">
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+			<li><a href="#">Menu 4</a></li>
+		</ul>
+		<ul class="menu3">
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+			<li><a href="#">Menu 4</a></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

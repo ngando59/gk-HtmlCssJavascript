@@ -1,0 +1,24 @@
+<html >
+<head>
+	<title> une page simple </title>
+</head>
+<body>
+	<!--Bonjour-->
+	<script language="javascript">
+		/*alert("bonjour");
+		document.write (prompt('quel est votre nom ?','Indiquer votre nom ici'));
+		confirm('quel bouton allez-vous choisir ?');*/
+	</script>
+
+	<script type="text/javascript">
+		function evaluation() {
+			document.formulaire.calcul.value=eval(document.formulaire.saisie.value); 
+		}
+	</script> 
+	<form name="formulaire">
+		Saisissez une expression mathématique : <input type="text" name=saisie maxlength=40 size=40>
+		<input type="button" value="evaluation." onClick="evaluation()">
+		<input type="text" name=calcul maxlength=40 size=40>
+	</form>
+</body>
+</html>

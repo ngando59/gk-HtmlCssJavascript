@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#myText {
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		/*function testClick() {
+			//var myText = document.getElementById("myText");
+			//myText.innerHTML = "Cliqué, cliqué !!!!";
+			//var myText = document.getElementById("myText");
+			//myText.innerHTML = "Bain alors mec ?";
+			//myText.appendChild(p);
+			//document.write("");
+		}
+		function valider() {
+			age = document.getElementById("age");
+			if(age.value == ""){
+				//alert("bouuhhh");
+				var myText = document.getElementById("myText");
+				myText.innerHTML = "Bain ton age mec ?";
+				return false;
+			}
+			return true;
+		}
+		function check(obj){
+			if(obj.value == "") {
+				var myText = document.getElementById("myText");
+				myText.innerHTML = "Bain ton age mec ?";
+			}	
+		}*/
+		function changeColor() {
+			var htmlTag = document.childNodes[1];
+			console.log(htmlTag);
+			var bodyTag = htmlTag.lastChild;
+			console.log(bodyTag);
+			var pTag = bodyTag.firstChild;
+			console.log(pTag);
+			pTag.style.color = "red";
+		}
+		/*function changeColor() {
+			var pTag =document.getElementById("foo");
+			pTag.style.color = "red";
+		}*/
+	</script>
+</head>
+<body onload="changeColor();">
+	<p>Lorem Ipsum</p>
+	<!--<p id="foo">Lorem Ipsum</p>-->
+	<!--<form action="#" method="post" onsubmit="return valider()">
+		<label>T'a quel age mon petit ?</label><br/>
+		<input id="age" type="text" name="age" size="3" onchange="check(this)">
+		<input type="submit"  value="envoyer">
+	</form>
+	<p id="myText"></p>-->
+	<!--<button type="button" onclick="testClick()">clique ici</button>
+	-->
+</body>
+</html>

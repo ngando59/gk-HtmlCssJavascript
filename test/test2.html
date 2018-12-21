@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="ISO-8859-15"/>
+	<title>Organisation O</title>
+</head>
+<body>
+	
+	<header>
+		<img alt="logo" src="https://www.perconseil.fr/wp-content/uploads/2018/07/logo-sncf.png"/>
+		<h1>Ma page</h1>
+		<form action="Controleur">
+			<input type="text" id="txRech" size="15" value="" />
+			<input type="submit" value="Rechercher"/>
+		</form>
+		<hr/>
+	</header>
+
+	<nav>
+		<a href="accueil.html">Accueil</a>
+		<a href="page2.html">Page 2</a>
+		<a href="page3.html">Page 3</a>
+	</nav>
+	
+	<h2>Mon contenu</h2>
+	
+	<p>Le texte de mon contenu</p>
+	<h2>Exemple d'utilisation d'iframe</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.681106499809!2d3.01786531564926!3d50.63304058207246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d55c764ab439%3A0x2e9bfd5c48d283b!2sEuratechnologies!5e0!3m2!1sfr!2sfr!4v1545228671781" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #eee">
+		
+	</canvas>
+	<svg width="100" height="100">
+		<circle cx ="50" cy="50" r="40" stroke="red" stoke-width="4" fill="yellow"  />You Browser don't support svg !
+	</svg>
+	<video width="500" height="400" controls="">
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<footer>
+		<hr/>
+		<p> © 2016 Global Knowledge Training LLC. All rights reserved</p>
+	</footer>
+	<script type="text/javascript">
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.fillStyle = "blue";
+		ctx.fillRect(0,0,150,150)
+	</script>
+</body>
+</html>

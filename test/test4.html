@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var arr = ["This is the first element", "This is the second element"];
+		console.log(arr[0]);
+		console.log(arr[1]);
+		console.log(arr[arr.length - 1]);
+
+		var fish = ["Lion", "Angel"];
+		console.log(fish[0]);
+		console.log(fish[1]);*/
+		/*try {
+			throw new Error("Ouups i did it again !");
+		} catch (e) {
+			console.log(e.name + ": " + e.message);
+		}*/
+		/*(function(){
+			console.log('Hello !!');
+		})();*/
+		//Variables globales
+		var iExt1 = 12;
+		iExt2 = 34;
+		function un () { 
+			var iLocal1 = 1;
+			iCommune1 = 11;
+			console.log("iExt1 vaut " + iExt1);
+			console.log("iExt2 vaut " + iExt2);
+			console.log("iLocal1 vaut " + iLocal1);
+			console.log("iCommune1 vaut " + iCommune1);
+			console.log("iCommune2 vaut " + iCommune2);
+		}
+	</script>
+	<script type="text/javascript">
+		function deux () { 
+			var iLocal2 = 2;
+			iCommune2 = 22;
+			console.log("fonction2");
+			console.log("iExt1 dans function 2 : "+iExt1);
+		}
+	</script>
+	<script type="text/javascript">
+		deux ();
+		un ();
+	</script>
+</body>
+</html>

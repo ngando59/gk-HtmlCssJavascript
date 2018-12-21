@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header w3-include-html="header.html"></header>
+	<div class="wrapper">
+		<h1>Contact</h1>
+		<form action="" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend> Informations </legend>
+				<div class="form-control">
+					<label for="civilite">Civilité : </label>
+					<input type="radio" name="civilite" value="Mme">Mme
+					<input type="radio" name="civilite" value="Mrs">Mrs
+					<input type="radio" name="civilite" value="Nb" checked="checked">Non binaire
+				</div>
+				<div class="form-control">
+					<label for="login">Nom : </label>
+					<input type="text" name="login" maxlength="20" />
+				</div>
+				<div class="form-control">
+					<label for="login">E-mail : </label>
+					<input type="mail" name="email" maxlength="20" />
+				</div>
+				<div class="form-control">
+					<label for="pwd">Mot de passe : </label>
+					<input type="password" name="pwd" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend> A propos </legend>
+				<div class="form-control">
+					<label for="birthday">Date de naissance : </label>
+					<input type="date" name="birthday" />
+				</div>
+				<div class="form-control">
+					<label for="ville">Ville de naissance : </label>
+					<select name="ville">
+						<option value="93600">Aulnay sous Bois</option>
+						<option value="75018">Paris</option>
+						<option value="59650">Villeneuve d'Ascq</option>
+						<option value="59000" selected="selected">Lille</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="langue">Langue : </label>
+					<select name="langue" multiple="">
+						<option value="français">Français</option>
+						<option value="portugais">Portugais</option>
+						<option value="anglais">Anglais</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="favcolor">Couleur favorite : </label>
+					<input type="color" name="favcolor" />
+				</div>
+				<div class="form-control">
+					<label for="favjeu">Jeux favoris : </label>
+					<input list="jeu" name="favjeu" />
+					<datalist id="jeu">
+						<option value="Super Mario"></option>
+						<option value="Packman"></option>
+						<option value="Zelda"></option>
+					</datalist>					
+				</div>
+				<div class="form-control">
+					<label for="cv">Fichier cv : </label>
+					<input type="file" name="cv">
+				</div>
+				<div class="form-control">
+					<label for="comments">Commentaire : </label>
+					<textarea rows="5" name="comments"></textarea>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="reset" value="Annuler" class="left">
+				&nbsp;&nbsp;
+				<input type="submit" value="Envoyer" class="right">
+			</div>
+		</form>
+	</div>
+	<header w3-include-html="footer.html"></header>
+</body>
+</html>

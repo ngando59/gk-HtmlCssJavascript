@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag & Drop</title>
+	<style>
+		#div1 {
+			width: 350px;
+			height: 180px;
+			padding: 10px;
+			border: 1px solid #aaa;
+		}
+	</style>
+	<script type="text/javascript">
+		function allowDrop(e) {
+			e.preventDefault();
+		}
+		function drag(e) {
+			e.dataTransfer.setData("bonbon", e.target.id);
+		}
+		function drop(e) {
+			e.preventDefault();
+			var data = e.dataTransfer.getData("bonbon");
+			e.target.appendChild(document.getElementById(data));
+		}
+	</script>
+</head>
+<body>
+	<p>Glisser l'image dans le rectangle</p>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<img id="drag1" src="https://images.japan-experience.com/guide-japon/23669/s380x280/_w850.png" draggable="true" ondragstart="drag(event)" width="100">
+</body>
+</html>

@@ -4,7 +4,7 @@
 	<title>CV Zinedine Zidane</title>
 	<style>
 		body {
-			background-color: #eaf0f2;
+			background-color: #f1f1f1;
 			font-family: "courier new";
 			margin: 0;
 			padding: 0;
@@ -15,7 +15,7 @@
 			font-weight: bold;
 		}
 		h1.blue {
-			color: #0ad2ff;
+			color: #999;
 		}
 		p {
 			font-size: 10pt;
@@ -26,84 +26,201 @@
 			width: 1000px;
 			background-color: white;
 			margin: 0 auto;
-			padding: 15px
+			padding: 0;	
+			border: 1px solid #ddd;
+			-webkit-box-shadow: -1px 1px 10px -1px rgba(0,0,0,0.75);
+			-moz-box-shadow: -1px 1px 10px -1px rgba(0,0,0,0.75);
+			box-shadow: -1px 1px 10px -1px rgba(0,0,0,0.75);
 		}
 		.text-center {
 			text-align: center;
 		}
 		a {
-			color: blue;
+			color: #6a8ba5;
 		}
 		a:hover {
-			color: red;
+			color: coral;
 		}
-		#experiences {
+		.flexbox {
 			display: flex;
 			align-items: center;
+		}
+		div[class^="class"] {
+			padding: 15px;
+		}
+		div[class = "classBio"] {
+			background-color: #eeeeee;
+		}
+		div[class = "classExp"] {
+			background-color: #f9f9f9;
+		}
+		div[class = "classDip"] {
+			background-color: #eaf0f2;
+		}
+		div.infos {
+			display: flex;
+			align-items: flex-start;
+		}
+		div.infos img {
+			width: 200px;
+			height: auto;
+			margin: 10px;
+		}
+		ul.menu {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			color: #777;
+		}
+		ul.menu li {
+			margin-bottom: 7px
+		}
+		ul.menu li a{
+			text-decoration: none;
+		}
+		h1.title {
+			text-align: center;
+			border: 1px solid #ddd;
+			background-color: #eee;
+			padding: 10px;
+		}
+
+		ul.square li {
+			display: flex;
+			align-items: flex-start;
+		}
+		.width100 {
+			width: 100px;
+		}
+		.width200 {
+			width: 250px;
+		}
+		.margin40 {
+			margin: 40px;
+		}
+		.borderBottom {
+			border-bottom: 1px solid #eeeeee;
 		}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
-		<h1 class="text-center">CV Zinedine Zidane</h1>
-		<div class="text-center">
-			<img src="https://assets.sport.francetvinfo.fr/sites/default/files/styles/large_16_9/public/import-articles/zinedine-zidane-football_f3da764d1bf10fff849a0faaf9511e9c.jpg?itok=3fTlVp-v" alt="" width="400px" />
-		</div>
-		<br/>
-		<div class="text-center">
-			<a href="#biographie">Biographie</a> | <a href="#experiences">Expériences</a> | <a href="#diplomes">Diplômes</a>
-		</div>
-		<h1 id="biographie" class="blue">Biographie :</h1>
-		<blockquote>
-			Zinédine Yazid Zidane, né le 23 juin 1972 à Marseille, est un footballeur international français devenu entraîneur. Durant sa carrière de joueur, entre 1988 et 2006, il évolue au poste de milieu offensif, comme meneur de jeu. De 2016 à 2018, il est l'entraîneur du Real Madrid, où il a terminé sa carrière de joueur. <br/><br/>
-
-			Surnommé « Zizou », il est considéré comme l'un des plus grands joueurs de l'histoire du football. Doté d'un profil atypique, il remporte de nombreux titres, tant avec l'équipe de France qu'avec les clubs où il a joué, comme les Girondins de Bordeaux, la Juventus de Turin et le Real Madrid. Il a, de plus, été nommé meilleur joueur de l'année au moins une fois dans chaque championnat où il a évolué. <br/><br/>
-
-			Surnommé « Zizou », il est considéré comme l'un des plus grands joueurs de l'histoire du football. Doté d'un profil atypique, il remporte de nombreux titres, tant avec l'équipe de France qu'avec les clubs où il a joué, comme les Girondins de Bordeaux, la Juventus de Turin et le Real Madrid. Il a, de plus, été nommé meilleur joueur de l'année au moins une fois dans chaque championnat où il a évolué. <br /><br/>
-
-			Source : <a href="https://fr.wikipedia.org/wiki/Zin%C3%A9dine_Zidane" target="_blank"><em>wikipedia</em></a>
-		</blockquote>
-		<div id="experiences">
+		<div class="infos">
+			<img src="https://assets.sport.francetvinfo.fr/sites/default/files/styles/large_16_9/public/import-articles/zinedine-zidane-football_f3da764d1bf10fff849a0faaf9511e9c.jpg?itok=3fTlVp-v" alt="" />
 			<div>
-				<h1 class="blue">Expériences :</h1>
-				<dl>
-					<dt>Coupe du monde FIFA</dt>
-						<dd>Champion en 1998</dd>
-						<dd>Vice-Champion en 2006</dd>
-						<br/>
-					<dt>Coupe d'Europe UEFA</dt>
-						<dd>Champion en 2000</dd>
-						<br/>
-					<dt>Championnat d'Espagne (1)</dt>
-						<dd>Champion en 2017</dd>
-						<dd>Vice-Champion en 2016</dd>
-						<br/>
-					<dt>Supercoupe d'Espagne (1)</dt>
-						<dd>Vainqueur en 2017</dd>
-						<br/>
-					<dt>Ligue des champions (3)</dt>
-						<dd>Vainqueur en 2016, 2017 et 2018</dd>
-						<br/>
-					<dt>Supercoupe de l'UEFA (2)</dt>
-						<dd>Vainqueur en 2016 et 2017</dd>
-						<br/>
-					<dt>Coupe du monde des clubs de la FIFA (2)</dt>
-						<dd>Vainqueur en 2016 et 2017</dd>
-				</dl>
-			</div>
-			<div>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Football_against_poverty_2014_-_Zidane_%283%29.jpg/180px-Football_against_poverty_2014_-_Zidane_%283%29.jpg" alt="">
+				<h1 class="text-center">CV Zinedine Zidane</h1>
+				<ul class="menu">
+					<li><a href="#biographie">Biographie</a></li>
+					<li><a href="#experiences">Expériences</a></a></li>
+					<li><a href="#diplomes">Diplômes</a></li>
+				</ul>
 			</div>
 		</div>
-		
-		<h1 id="diplomes" class="blue">Diplômes :</h1>
-		<ul type="square">
-			<li>Ballon d'or 1998</li>
-			<li>Ballon d'or 1999</li>
-			<li>Ballon d'or 2000</li>
-			<li>Ballon d'or 2006</li>
-			<li>Ballon d'or 2005</li>
-			<li>Ballon d'or 2004</li>
-		</ul>
+		<div id="biographie" class="">
+			<h1 class="blue title">Biographie</h1>
+			<blockquote>
+				Zinédine Yazid Zidane, né le 23 juin 1972 à Marseille, est un footballeur international français devenu entraîneur. Durant sa carrière de joueur, entre 1988 et 2006, il évolue au poste de milieu offensif, comme meneur de jeu. De 2016 à 2018, il est l'entraîneur du Real Madrid, où il a terminé sa carrière de joueur. <br/><br/>
+
+				Surnommé « Zizou », il est considéré comme l'un des plus grands joueurs de l'histoire du football. Doté d'un profil atypique, il remporte de nombreux titres, tant avec l'équipe de France qu'avec les clubs où il a joué, comme les Girondins de Bordeaux, la Juventus de Turin et le Real Madrid. Il a, de plus, été nommé meilleur joueur de l'année au moins une fois dans chaque championnat où il a évolué. <br/><br/>
+
+				Surnommé « Zizou », il est considéré comme l'un des plus grands joueurs de l'histoire du football. Doté d'un profil atypique, il remporte de nombreux titres, tant avec l'équipe de France qu'avec les clubs où il a joué, comme les Girondins de Bordeaux, la Juventus de Turin et le Real Madrid. Il a, de plus, été nommé meilleur joueur de l'année au moins une fois dans chaque championnat où il a évolué. <br /><br/>
+
+				Source : <a href="https://fr.wikipedia.org/wiki/Zin%C3%A9dine_Zidane" target="_blank"><em>wikipedia</em></a>
+			</blockquote>
+		</div>
+		<div id="experiences" class="">
+			<h1 class="blue title">Expériences</h1>
+			<div class="margin40">
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Coupe du monde FIFA
+					</div>
+					<dl>
+						<dt>Champion en 1998</dt>
+						<dt>Vice-Champion en 2006</dt>
+					</dl>
+				</div>
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Coupe d'Europe UEFA
+					</div>
+					<dl>
+						<dt>Champion en 2000</dt>
+					</dl>
+				</div>
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Championnat d'Espagne (1)
+					</div>
+					<dl>
+						<dt>Champion en 2017</dt>
+						<dt>Vice-Champion en 2016</dt>
+					</dl>
+				</div>
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Supercoupe d'Espagne (1)
+					</div>
+					<dl>
+						<dt>Vainqueur en 2017</dt>
+					</dl>
+				</div>
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Ligue des champions (3)
+					</div>
+					<dl>
+						<dt>Vainqueur en 2016, 2017 et 2018</dt>
+					</dl>
+				</div>
+				<div class="flexbox borderBottom">
+					<div class="width200">
+						Supercoupe de l'UEFA (2)
+					</div>
+					<dl>
+						<dt>Vainqueur en 2016 et 2017</dt>
+					</dl>
+				</div>
+			</div>
+			
+		</div>
+		<div id="diplomes" class="">
+			<h1 class="blue title">Diplômes</h1>
+			<ul class="square">
+				<li>
+					<div class="width100">
+						1998
+					</div>
+					<div>
+						Ballon d'or 1998
+					</div>				
+				</li>
+				<li>
+					<div class="width100">
+						1999
+					</div>
+					<div>
+						Ballon d'or 1999
+					</div>				
+				</li>
+				<li>
+					<div class="width100">
+						2000
+					</div>
+					<div>
+						Ballon d'or 2000
+					</div>				
+				</li>
+				<li>
+					<div class="width100">
+						2006
+					</div>
+					<div>
+						Ballon d'or 2006
+					</div>				
+				</li>
+			</ul>
+		</div>	
+	</div>	
 </body>
 </html>

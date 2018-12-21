@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire</title>
+	<style>
+	body {
+		margin :0;
+		padding: 0;
+		background-color: #f9f9f9;
+		font-family: 'Courier new';
+		color: #777;
+	}
+	.wrapper {
+		width: 1000px;
+		margin: 0 auto;
+		border:1px solid #ddd;
+		background-color: white;
+	}
+	form {
+		width: 500px;
+		margin: 0 auto;
+		background-color: #f1f1f1;
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+	.form-control {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 15px;
+	}
+	.form-control label {
+		width: 150px;
+		text-align: right;
+		margin-right: 10px;
+		position: relative;
+	}
+	.form-control input[type='text'], .form-control input[type='password'], .form-control input[type='mail'], .form-control input[type='file'], .form-control textarea, .form-control select, input[type='date'], input[type='color'], input[type='range'], input[type='search'], input[type='tel'] {
+		width: 250px;
+		color: #777;
+	}
+	.form-control input[type='radio'] {
+		margin-right: 10px;
+	}
+	.text-right {
+		text-align: right;
+	}
+	input[type='image'] {
+		width: 110px;
+	}
+	fieldset {
+		border:1px solid #ddd;
+		margin-bottom: 10px;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	.text-center {
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<br/>
+		<form action="" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="id" value="11">
+			<fieldset>
+				<legend>Vous</legend>
+				<div class="form-control">
+					<label for="civilite">Civilité : </label>
+					<input type="radio" name="civilite" value="Mme">Mme
+					<input type="radio" name="civilite" value="Mrs">Mrs
+					<input type="radio" name="civilite" value="Nb" checked="checked">Non binaire
+				</div>
+				<div class="form-control">
+					<label for="login">Nom : </label>
+					<input type="text" name="login" maxlength="20" />
+				</div>
+				<div class="form-control">
+					<label for="login">E-mail : </label>
+					<input type="mail" name="email" maxlength="20" />
+				</div>
+				<div class="form-control">
+					<label for="pwd">Mot de passe : </label>
+					<input type="password" name="pwd" />
+				</div>
+				<div class="form-control">
+					<label for="favcolor">Couleur favorite : </label>
+					<input type="color" name="favcolor" />
+				</div>
+				<div class="form-control">
+					<label for="birthday">Date de naissance : </label>
+					<input type="date" name="birthday" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Infos</legend>
+				<div class="form-control">
+					<label for="points">Points : </label>
+					<input type="range" name="points" min="0" max="10">
+				</div>
+				<div class="form-control">
+					<label for="googlesearch">Search google : </label>
+					<input type="search" name="googlesearch">
+				</div>
+				<div class="form-control">
+					<label for="usrtel">Téléphone : </label>
+					<input type="tel" name="usrtel">
+				</div>
+				<div class="form-control">
+					<label for="favjeu">Jeux favoris : </label>
+					<input list="jeu" name="favjeu" />
+					<datalist id="jeu">
+						<option value="Super Mario"></option>
+						<option value="Packman"></option>
+						<option value="Zelda"></option>
+					</datalist>
+					
+				</div>
+				<div class="form-control">
+					<label for="ville">Ville : </label>
+					<select name="ville">
+						<option value="93600">Aulnay sous Bois</option>
+						<option value="75018">Paris</option>
+						<option value="59650">Villeneuve d'Ascq</option>
+						<option value="59000" selected="selected">Lille</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="langue">Langue : </label>
+					<select name="langue" multiple="">
+						<option value="français">Français</option>
+						<option value="portugais">Portugais</option>
+						<option value="anglais">Anglais</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="cv">Fichier cv : </label>
+					<input type="file" name="cv">
+				</div>
+				<div class="form-control">
+					<label for="comments">Commentaire : </label>
+					<textarea rows="5" name="comments"></textarea>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="reset" value="Annuler" class="left">
+				&nbsp;&nbsp;
+				<input type="submit" value="Envoyer" class="right">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

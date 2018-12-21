@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="wrapper">	
+		<!--<div id="capt1">
+			<span id="capt2">Cliquez pour la capture</span>
+		</div>
+		<div id="boul1">
+			<span id="boul2">Cliquez pour la capture</span>
+		</div>
+	</div>-->
+	<table id="myTable" border="1">
+		<tr>
+			<td>Ligne1 cellule1</td>
+			<td>Ligne1 cellule2</td>
+		</tr>
+		<tr>
+			<td>Ligne2 cellule1</td>
+			<td>Ligne2 cellule2</td>
+		</tr>
+	</table>
+	<button id="insertNewRow" onclick="insertRow()">
+		Ajouter une nouvelle ligne
+	</button>
+</body>
+<script type="text/javascript">
+	function insertRow() {
+		var foo=
+		document.getElementById('myTable').insertRow(0);
+		var cell1 = foo.insertCell(0);
+		var cell2 = foo.insertCell(1);
+		cell1.innerHTML = "NvllLigneCellule1";
+		cell2.innerHTML = "NvllLigneCellule2";
+	}
+	/*var capt1 = document.getElementById('capt1');
+	var capt2 = document.getElementById('capt2');
+	var boul1 = document.getElementById('boul1');
+	var boul2 = document.getElementById('boul2');
+
+	capt1.addEventListener('click', function(){
+		console.log("Déclenchement événement capt1");
+	}, true);
+	capt2.addEventListener('click', function(){
+		console.log("Déclenchement événement capt2");
+	}, true);
+	boul1.addEventListener('click', function(){
+		console.log("Déclenchement événement boul1");
+	}, true);
+	boul2.addEventListener('click', function(){
+		console.log("Déclenchement événement boul2");
+	}, true);*/
+</script>
+</html>

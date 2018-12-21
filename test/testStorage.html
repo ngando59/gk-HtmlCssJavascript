@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storage</title>
+</head>
+<body>
+	<div id="result">
+		
+	</div>
+	<script type="text/javascript">
+		if(typeof(Storage) !== "undefined" ) {
+			localStorage.setItem("lastName", "Titi");
+			localStorage.setItem("firstName", "Toto");
+			document.getElementById("result").innerHTML = localStorage.getItem("lastName")+' '+localStorage.getItem("firstName");
+		} else {
+			document.getElementById("result").innerHTML = "Le navigateur ne supporte pas l'aPI Storage";
+		}
+	</script>
+</body>
+</html>

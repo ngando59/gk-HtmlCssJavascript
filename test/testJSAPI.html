@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API JS</title>
+</head>
+<body>
+	<button onclick="getLocation()">localiser moi !</button>
+	<div id="demo"></div>
+	<script type="text/javascript">
+		var x = document.getElementById("demo");
+		function getLocation() {
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				x.innerHTML = "Geolocalisation pas supportée !";
+			}
+		}
+		/*function showPosition(position) {
+			x.innerHTML = "Latitude : "+position.coords.latitude + "<br>"
+			+"Longitude : "+position.coords.longitude;
+		}*/
+
+		function showPosition(position) {
+			var latlon = position.coords.latitude + "," + position.coords.longitude;
+			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_:KEY";
+			document.getElementById("demo").innerHTML = "<img src='"+img_url+"'>";
+		}
+
+	</script>
+</body>
+</html>
